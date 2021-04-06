@@ -1,0 +1,17 @@
+---
+# Need to chmod 644 on hosts /var/log/syslog
+# Need to ??? / config.php
+
+version: "3"
+
+services:
+  loganalyzer:
+    image: registry:5000/loganalyzer:1.0.0
+    ports:
+      - "8082:80"
+    environment:
+      - TZ=Europe/London
+      - HTTP_PORT=8082
+    volumes:
+      - /var/log:/var/log
+      - /data/metminiwx/loganalyzer:/data
