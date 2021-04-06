@@ -18,7 +18,8 @@ WORKDIR /var/www/html
 HEALTHCHECK --interval=5s --timeout=3s --start-period=20s CMD /health_check.sh
 
 ENV TZ=Europe/London
-ENV HTTP_PORT=80
+#ENV HTTP_PORT=80
+ENV HTTP_PORT=8082
 
 EXPOSE ${HTTP_PORT}/tcp
 
