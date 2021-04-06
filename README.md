@@ -20,3 +20,6 @@ installation
 - chmod 644 /var/log/syslog on host
 - refresh webui - you should now see log entries
 
+known issues
+------------
+- healthcheck fails - but does not appear to cause an issue - portainer shows healthcheck failure
