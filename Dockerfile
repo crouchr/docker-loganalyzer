@@ -23,7 +23,7 @@ ENV HTTP_PORT=8082
 
 EXPOSE ${HTTP_PORT}/tcp
 
-VOLUME ["/data"]
+#VOLUME ["/data"]
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["start"]
